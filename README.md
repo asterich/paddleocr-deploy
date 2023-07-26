@@ -4,7 +4,13 @@
 
 本项目的部署需要预先下载python依赖：
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+然后，需要安装paddlehub的ocr_system和kie_ser模块：
+```bash
+hub install hubserving/ocr_system
+hub install hubserving/kie_ser
 ```
 
 启动OCR+SER服务：
